@@ -1,0 +1,17 @@
+{
+  "name": "henrik/rbac",
+  "type": "library",
+  "license": "MIT",
+  "description": "empty",
+  "minimum-stability": "dev",
+  "require": {
+    "psr/container": "^1.0@dev",
+    "ext-pthreads": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "event\\": "src/",
+      "examples\\": "examples/"
+    }
+  }
+}
