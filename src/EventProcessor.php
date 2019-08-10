@@ -11,6 +11,7 @@ use event\core\ThreadedEventActions;
 use event\exceptions\IdAlreadyExistsException;
 use event\exceptions\TypeException;
 use event\exceptions\UncompatibleClassTypeException;
+use Pool;
 
 /**
  * Class EventProcessor
@@ -188,6 +189,8 @@ class EventProcessor
         /**
          * initialising Threaded  event class
          */
+        $pool = new Pool(4);
+
         $thread_obj = new $class;
         $thread_obj->setParams($ev_obj, $threaded_conf['event_class_params']['method']);
         $thread_obj->$method();
