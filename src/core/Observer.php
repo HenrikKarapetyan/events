@@ -1,13 +1,9 @@
 <?php
 
 
-namespace event\core;
+namespace henrik\events\core;
 
-
-use event\exceptions\UncompatibleClassTypeException;
-use event\handlers\OutOfScopeEventHandler;
-use event\interfaces\EventHandlerInterface;
-use event\interfaces\ObserverInterface;
+use henrik\events\interfaces\ObserverInterface;
 
 /**
  * Class Observer
@@ -17,14 +13,10 @@ class Observer implements ObserverInterface
 {
     /**
      * @param string $class
-     * @return EventEmitter|mixed
-     * @throws UncompatibleClassTypeException
+     * @return EventEmitter
      */
-    public function handler(string $class)
+    public function handler(string $class): EventEmitter
     {
-        if (in_array(OutOfScopeEventHandler::class, class_uses((new $class)))){
-            return new EventEmitter($class);
-        }
-        throw new UncompatibleClassTypeException("The {$class} must implement `event\interfaces\EventHandlerInterface` interface");
+        return new EventEmitter($class);
     }
 }

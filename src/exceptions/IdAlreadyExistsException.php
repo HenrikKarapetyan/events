@@ -6,11 +6,11 @@
  * Time: 8:42 AM
  */
 
-namespace event\exceptions;
+namespace henrik\events\exceptions;
 
 /**
  * Class IdAlreadyExistsException
- * @package event\exceptions
+ * @package henrik\events\exceptions
  */
 class IdAlreadyExistsException extends ContainerException
 {

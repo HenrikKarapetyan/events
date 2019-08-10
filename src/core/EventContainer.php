@@ -1,11 +1,11 @@
 <?php
 
 
-namespace event\core;
+namespace henrik\events\core;
 
 
-use event\container\Container;
-use event\container\ContainerModes;
+use henrik\container\Container;
+use henrik\container\ContainerModes;
 
 /**
  * Class EventContainer
@@ -16,11 +16,10 @@ class EventContainer extends Container
 
     /**
      * EventContainer constructor.
-     * @throws \event\exceptions\ContainerModeException
+     * @throws \henrik\container\UndefinedModeException
      */
     public function __construct()
     {
-        parent::__construct();
         $this->change_mode(ContainerModes::MULTIPLE_VALUE_MODE);
     }
 }

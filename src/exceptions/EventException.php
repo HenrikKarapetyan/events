@@ -1,13 +1,13 @@
 <?php
 
 
-namespace event\exceptions;
+namespace henrik\events\exceptions;
 
 use Exception;
 
 /**
  * Class EventException
- * @package event\exceptions
+ * @package henrik\events\exceptions
  */
 class EventException extends Exception
 {

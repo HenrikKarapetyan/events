@@ -1,16 +1,16 @@
 <?php
 
 
-namespace event;
+namespace henrik\events;
 
 
-use event\core\EventActions;
-use event\core\EventContainer;
-use event\core\Observer;
-use event\core\ThreadedEventActions;
-use event\exceptions\IdAlreadyExistsException;
-use event\exceptions\TypeException;
-use event\exceptions\UncompatibleClassTypeException;
+use henrik\events\core\EventActions;
+use henrik\events\core\EventContainer;
+use henrik\events\core\Observer;
+use henrik\events\core\ThreadedEventActions;
+use henrik\events\exceptions\IdAlreadyExistsException;
+use henrik\events\exceptions\TypeException;
+use henrik\events\exceptions\UncompatibleClassTypeException;
 use Pool;
 
 /**
@@ -89,8 +89,8 @@ class EventProcessor
      * @param string $event_class
      * @param string $method
      * @param \Closure $callback
-     * @throws IdAlreadyExistsException
-     * @throws TypeException
+     * @throws \henrik\container\exceptions\IdAlreadyExistsException
+     * @throws \henrik\container\exceptions\TypeException
      */
     public function addEvent(string $event_class, string $method, \Closure $callback)
     {
@@ -108,6 +108,8 @@ class EventProcessor
     /**
      * @param string $event_id
      * @param string $handler
+     * @throws \henrik\container\exceptions\IdAlreadyExistsException
+     * @throws \henrik\container\exceptions\TypeException
      */
     public function eventOutOfScopeStateChange(string $event_id, string $handler)
     {

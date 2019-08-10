@@ -1,7 +1,7 @@
 <?php
 
 
-namespace event\core;
+namespace henrik\events\core;
 
 /**
  * Class EventActions
@@ -97,7 +97,7 @@ class EventActions
      * @param bool $is_threaded
      * @return array
      */
-    private function parseArray($args, bool $is_threaded = false)
+    private function parseArray($args, $is_threaded = false)
     {
         foreach ($args as $param) {
             $method = $param;

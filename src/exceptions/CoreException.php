@@ -1,7 +1,7 @@
 <?php
 
 
-namespace event\exceptions;
+namespace henrik\events\exceptions;
 /**
  * Class CoreException
  * @package event\core

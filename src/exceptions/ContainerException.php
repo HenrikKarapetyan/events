@@ -6,14 +6,14 @@
  * Time: 8:40 AM
  */
 
-namespace event\exceptions;
+namespace henrik\events\exceptions;
 
 
 use Psr\Container\ContainerExceptionInterface;
 
 /**
  * Class ContainerException
- * @package event\exceptions
+ * @package henrik\events\exceptions
  */
 class ContainerException  extends EventException implements ContainerExceptionInterface
 {

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace event\handlers;
+namespace henrik\events\handlers;
 
 
 /**
@@ -10,6 +10,4 @@ namespace event\handlers;
  */
 trait MethodCallsHandler
 {
-    use OutOfScopeEventHandler;
-
 }

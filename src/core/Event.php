@@ -1,11 +1,8 @@
 <?php
 
-
-namespace event\core;
-
+namespace henrik\events\core;
 
 trait Event
 {
-    use Component;
 
 }

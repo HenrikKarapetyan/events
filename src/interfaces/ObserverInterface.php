@@ -1,7 +1,7 @@
 <?php
 
 
-namespace event\interfaces;
+namespace henrik\events\interfaces;
 
 
 /**
