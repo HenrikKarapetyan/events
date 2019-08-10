@@ -1,11 +1,11 @@
 <?php
 
 
-namespace event\exceptions;
+namespace henrik\events\exceptions;
 
 /**
  * Class UnknownMethodException
- * @package event\exceptions
+ * @package henrik\events\exceptions
  */
 class UnknownMethodException extends CoreException
 {

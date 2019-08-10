@@ -1,12 +1,12 @@
 <?php
 
 
-namespace event\exceptions;
+namespace henrik\events\exceptions;
 
 
 /**
  * Class UncompatibleClassTypeException
- * @package event\exceptions
+ * @package henrik\events\exceptions
  */
 class UncompatibleClassTypeException extends TypeException
 {

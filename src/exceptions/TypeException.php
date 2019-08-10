@@ -6,11 +6,11 @@
  * Time: 8:39 AM
  */
 
-namespace event\exceptions;
+namespace henrik\events\exceptions;
 
 /**
  * Class TypeException
- * @package event\exceptions
+ * @package henrik\events\exceptions
  */
 class TypeException extends ContainerException
 {

@@ -1,12 +1,12 @@
 <?php
 
 
-namespace event\exceptions;
+namespace henrik\events\exceptions;
 
 
 /**
  * Class ContainerModeException
- * @package event\exceptions
+ * @package henrik\events\exceptions
  */
 class ContainerModeException extends ContainerException
 {

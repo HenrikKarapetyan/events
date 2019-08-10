@@ -6,14 +6,14 @@
  * Time: 8:37 AM
  */
 
-namespace event\exceptions;
+namespace henrik\events\exceptions;
 
 
 use Psr\Container\NotFoundExceptionInterface;
 
 /**
  * Class ServiceNotFoundException
- * @package event\exceptions
+ * @package henrik\events\exceptions
  */
 class ServiceNotFoundException extends EventException implements NotFoundExceptionInterface
 {
