@@ -20,8 +20,8 @@ try {
         AfterBeforeMethods::class,
         'save',
         function (EventActions $actions) {
-            $actions->executeBefore(['beforeSave', 1]);
-            $actions->executeAfter(['afterSave', 12]);
+            $actions->executeBefore('beforeSave', 1);
+            $actions->executeAfter('afterSave', 12);
         }
     );
 } catch (IdAlreadyExistsException $e) {
