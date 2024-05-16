@@ -1,14 +1,10 @@
 <?php
 
-
 namespace henrik\events\exceptions;
 
 use Exception;
 
 /**
- * Class EventException
- * @package henrik\events\exceptions
+ * Class EventException.
  */
-class EventException extends Exception
-{
-}
+class EventException extends Exception {}

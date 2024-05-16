@@ -1,14 +1,8 @@
 <?php
 
-
 namespace henrik\events\exceptions;
 
-
 /**
- * Class InvalidCallException
- * @package event\core
+ * Class InvalidCallException.
  */
-class InvalidCallException extends CoreException
-{
-
-}
+class InvalidCallException extends CoreException {}

@@ -1,11 +1,8 @@
 <?php
 
-
 namespace henrik\events\exceptions;
+
 /**
- * Class CoreException
- * @package event\core
+ * Class CoreException.
  */
-class CoreException extends EventException
-{
-}
+class CoreException extends EventException {}

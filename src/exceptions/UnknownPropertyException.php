@@ -1,13 +1,8 @@
 <?php
 
-
 namespace henrik\events\exceptions;
 
-
 /**
- * Class UnknownPropertyException
- * @package henrik\events\exceptions
+ * Class UnknownPropertyException.
  */
-class UnknownPropertyException extends CoreException
-{
-}
+class UnknownPropertyException extends CoreException {}

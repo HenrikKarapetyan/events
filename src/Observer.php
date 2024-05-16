@@ -1,18 +1,17 @@
 <?php
 
+namespace henrik\events;
 
-namespace henrik\events\core;
-
-use henrik\events\interfaces\ObserverInterface;
+use henrik\events\Interfaces\ObserverInterface;
 
 /**
- * Class Observer
- * @package event
+ * Class Observer.
  */
 class Observer implements ObserverInterface
 {
     /**
      * @param string $class
+     *
      * @return EventEmitter
      */
     public function handler(string $class): EventEmitter
