@@ -24,8 +24,11 @@ try {
             $actions->executeAfter('afterSave', 12);
         }
     );
+
 } catch (IdAlreadyExistsException $e) {
 }
+
+
 
 try {
     $eventProcessor->emmit(AfterBeforeMethods::class, 'save');

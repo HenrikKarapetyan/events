@@ -4,7 +4,9 @@
     "license": "BSD",
     "minimum-stability": "dev",
     "require": {
-        "henrik/container": "2.0.1"
+        "henrik/container": "2.0.1",
+        "psr/event-dispatcher": "^1.0@dev",
+        "psr/event-dispatcher-message": "*"
     },
     "autoload": {
         "psr-4": {
