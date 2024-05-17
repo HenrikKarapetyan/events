@@ -3,13 +3,17 @@
 namespace henrik\events;
 
 use Closure;
-use Psr\EventDispatcher\EventDispatcherInterface;
-use Psr\EventDispatcher\StoppableEventInterface;
+use Hk\Contracts\EventDispatcherInterface;
+use Hk\Contracts\EventSubscriberInterface;
 
 class EventDispatcher implements EventDispatcherInterface
 {
+    /** @var mixed */
     private array $listeners = [];
-    private array $sorted    = [];
+
+    /** @var mixed */
+    private array $sorted = [];
+    /** @var mixed */
     private array $optimized;
 
     public function __construct()
@@ -35,6 +39,11 @@ class EventDispatcher implements EventDispatcherInterface
         return $event;
     }
 
+    /**
+     * @param string|null $eventName
+     *
+     * @return callable|callable[]|array<mixed>
+     */
     public function getListeners(?string $eventName = null): array
     {
         if ($eventName !== null) {
@@ -114,7 +123,7 @@ class EventDispatcher implements EventDispatcherInterface
 
     /**
      * @param string                         $eventName
-     * @param callable|array<object, string> $listener
+     * @param array<object, string>|callable $listener
      *
      * @return void
      */

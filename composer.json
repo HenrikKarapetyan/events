@@ -12,7 +12,8 @@
     ],
     "require": {
         "henrik/container": "2.0.1",
-        "psr/event-dispatcher": "^1.0@dev"
+        "psr/event-dispatcher": "^1.0@dev",
+        "henrik/contracts": "dev-main"
     },
     "autoload": {
         "psr-4": {
