@@ -1,6 +1,6 @@
 <?php
 
-namespace henrik\events;
+namespace Henrik\Events;
 
 use Closure;
 use Hk\Contracts\EventDispatcherInterface;

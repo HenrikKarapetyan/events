@@ -1,6 +1,6 @@
 <?php
 
-namespace henrik\events\Attributes;
+namespace Henrik\Events\Attributes;
 
 use Attribute;
 
