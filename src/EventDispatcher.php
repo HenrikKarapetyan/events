@@ -3,8 +3,8 @@
 namespace Henrik\Events;
 
 use Closure;
-use Hk\Contracts\EventDispatcherInterface;
-use Hk\Contracts\EventSubscriberInterface;
+use Henrik\Contracts\EventDispatcherInterface;
+use Henrik\Contracts\EventSubscriberInterface;
 
 class EventDispatcher implements EventDispatcherInterface
 {
